@@ -1,0 +1,125 @@
+$ mkdir ~/FECONJ
+# Creates a directory for your project called "FECONJ" in your user directory
+
+$ cd ~/FECONJ
+# Changes the current working directory to your newly created directory
+
+$ git init
+# Sets up the necessary Git files
+# Initialized empty Git repository in /Users/you/FECONJ/.git/
+
+$ touch README
+# Creates a file called "README" in your FECONJ directory
+
+$ git add FECONJ
+$ git commit -m 'first commit'
+
+
+@echo off
+:main
+set /p startinput=Verb (Irregular) or "conj":
+goto %startinput%
+:conj
+set /p input="er", "ir" or "re":
+if %input%==%input% goto %input%
+:er
+set /p verbwo=
+goto erconj
+:re
+set /p verbwo=
+goto reconj
+:ir
+set /p verbwo=
+goto irconj
+
+
+:erconj
+echo - PRESENTE -
+echo Je/J' %verbwo%e (I ---)
+echo Tu %verbwo%es (You ---)
+echo Il/elle/on %verbwo%e (He/she/one ---)
+echo Nous %verbwo%ons (We ---)
+echo Vous %verbwo%ez (You (Pl.) ---)
+echo Ils/Elles %verbwo%ent (They ---)
+echo - PRESENT -
+echo.
+echo - FUTURE -
+echo Je/J' %verbwo%erai (I ---)
+echo Tu %verbwo%eras (You ---)
+echo Il/elle/on %verbwo%era (He/she/one ---)
+echo Nous %verbwo%erons (We ---)
+echo Vous %verbwo%erez (You (Pl.) ---)
+echo Ils/Elles %verbwo%ent (They ---)
+echo - FUTURE -
+echo.
+echo - IMPARFAIT -
+echo Je/J' %verbwo%ais (I ---)
+echo Tu %verbwo%ais (You ---)
+echo Il/elle/on %verbwo%ait (He/she/one ---)
+echo Nous %verbwo%ions (We ---)
+echo Vous %verbwo%iez (You (Pl.) ---)
+echo Ils/Elles %verbwo%aient (They ---)
+echo - PAST IMPERFECT -
+echo.
+pause
+
+
+:reconj
+echo - PRESENTE -
+echo Je/J' %verbwo%s (I ---)
+echo Tu %verbwo%s (You ---)
+echo Il/elle/on %verbwo% (He/she/one ---)
+echo Nous %verbwo%ons (We ---)
+echo Vous %verbwo%ez (You (Pl.) ---)
+echo Ils/Elles %verbwo%ent (They ---)
+echo - PRESENT -
+echo.
+echo - FUTURE -
+echo Je/J' %verbwo%rai (I ---)
+echo Tu %verbwo%ras (You ---)
+echo Il/elle/on %verbwo%ra (He/she/one ---)
+echo Nous %verbwo%rons (We ---)
+echo Vous %verbwo%rez (You (Pl.) ---)
+echo Ils/Elles %verbwo%rent (They ---)
+echo - FUTURE -
+echo.
+echo - IMPARFAIT -
+echo Je/J' %verbwo%ais (I ---)
+echo Tu %verbwo%ais (You ---)
+echo Il/elle/on %verbwo%ait (He/she/one ---)
+echo Nous %verbwo%ions (We ---)
+echo Vous %verbwo%iez (You (Pl.) ---)
+echo Ils/Elles %verbwo%aient (They ---)
+echo - PAST IMPERFECT -
+echo.
+pause
+
+:irconj
+echo - PRESENTE -
+echo Je/J' %verbwo%is (I ---)
+echo Tu %verbwo%is (You ---)
+echo Il/elle/on %verbwo%it (He/she/one ---)
+echo Nous %verbwo%issons (We ---)
+echo Vous %verbwo%issez (You (Pl.) ---)
+echo Ils/Elles %verbwo%issent (They ---)
+echo - PRESENT -
+echo.
+echo - FUTURE -
+echo Je/J' %verbwo%irai (I ---)
+echo Tu %verbwo%iras (You ---)
+echo Il/elle/on %verbwo%ira (He/she/one ---)
+echo Nous %verbwo%irons (We ---)
+echo Vous %verbwo%irez (You (Pl.) ---)
+echo Ils/Elles %verbwo%iront (They ---)
+echo - FUTURE -
+echo.
+echo - IMPARFAIT -
+echo Je/J' %verbwo%ais (I ---)
+echo Tu %verbwo%ais (You ---)
+echo Il/elle/on %verbwo%ait (He/she/one ---)
+echo Nous %verbwo%ions (We ---)
+echo Vous %verbwo%iez (You (Pl.) ---)
+echo Ils/elles %verbwo%aient (They ---)
+echo - PAST IMPERFECT -
+echo.
+pause
